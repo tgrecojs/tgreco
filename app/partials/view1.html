@@ -1,0 +1,21 @@
+<div ng-controller="homeController">
+
+<div class="jumbotron text-center">
+    <h1>Thomas Joseph Greco</h1>
+    <p class="text-danger">Welcome to my nested SPA!</p>
+</div>
+<div class="container">
+
+    <tabset justified="true">
+        <tab 
+            ng-repeat="t in tabs" 
+            heading="{{t.heading}}"
+            select="go(t.route)"
+            active="t.active">
+        </tab>
+    </tabset>
+    <br>
+    <div ui-view></div>
+
+</div>
+</div>

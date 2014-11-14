@@ -1,0 +1,45 @@
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.navbar, .jumbotron {
+
+	margin-bottom: 0px;
+
+}
+
+.picture-row {
+
+	margin-top: 10px;
+
+
+}
+
+.jumbotron {
+
+	margin-top: 0px;
+    margin-bottom: 20px;
+
+}
+
+h2.tab-padding {
+
+
+    padding-top: 20px;
+
+}
+
+textarea.comment {
+
+    height: 150px;
+
+}

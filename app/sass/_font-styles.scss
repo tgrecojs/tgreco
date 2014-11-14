@@ -1,0 +1,60 @@
+$title-font : "Chaparral Pro Display";
+$longform-font : "Adobe Caslon Pro";
+
+
+html { 
+    
+    font-size: 16px;
+
+}
+
+h1 { 
+    
+    font-family: $title-font;
+    font-size : 2rem;
+    line-height: 1.2;
+
+}
+
+h2 { 
+    
+    font-family: $title-font;
+    font-size : 1.75rem;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+h3 { 
+    
+    font-family: $title-font;
+    font-size : 1.5rem;
+    line-height: 1.2;
+
+}
+
+p {
+    
+    font-family: $longform-font;
+    font-size: 1rem;
+    line-height: 1.5; 
+} 
+
+p.sticky{
+    
+    padding-top: 25px;
+    
+
+}
+
+
+navbar li a {
+
+    font-family: $longform-font;
+
+}
+
+.title, .sticky { 
+
+    text-align: center;
+
+}

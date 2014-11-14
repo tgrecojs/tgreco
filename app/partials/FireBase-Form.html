@@ -1,0 +1,40 @@
+<div ng-controller="MyController">
+    <div class='jumbotron'>
+
+        <h1 class="text-center">Three Way Data Binding Using FireBase!</h1>
+        <p class="lead text-center">Fill out the form below and watch what happens!</p>
+    </div>
+  <div class="container">
+
+    <div class="row row-centered">
+        <div class="col-md-8 col-centered">
+            <textarea ng-model='name' type='text' id='nameInput' placeholder='enter a username...' class="form-control name"></textarea>
+        </div>
+    </div>
+
+
+    <div class="row row-centered">
+        <div class="col-md-8 col-centered">
+            <textarea ng-model='msg' ng-keydown="addMessage($event)" type='text' id='messageInput' placeholder='Type a message...' class="form-control comment"></textarea>
+        </div>
+    </div>
+  </div>
+  <br>
+    <div class="row">
+        <div class="well">
+          <div class="container">
+                <ul>
+                    <li ng-repeat='msg in messages'>
+                        <h3><b>Name:</b> {{msg.from}}</h3>
+                    </li>
+                </ul>
+                <hr>
+                <ul>
+                    <li ng-repeat='msg in messages'>
+                        <p><b>Feedback:</b> {{msg.body}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
