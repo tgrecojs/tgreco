@@ -8,14 +8,14 @@
 
     <div class="row row-centered">
         <div class="col-md-8 col-centered">
-            <textarea ng-model='name' type='text' id='nameInput' placeholder='enter a username...' class="form-control name"></textarea>
+            <textarea ng-model='name' type='text' id='nameInput' placeholder='Enter your name, if that is your real name...' class="form-control name"></textarea>
         </div>
     </div>
 
 
     <div class="row row-centered">
         <div class="col-md-8 col-centered">
-            <textarea ng-model='msg' ng-keydown="addMessage($event)" type='text' id='messageInput' placeholder='Type a message...' class="form-control comment"></textarea>
+            <textarea ng-model='msg' ng-keydown="addMessage($event)" type='text' id='messageInput' placeholder='Show me some love!' class="form-control comment"></textarea>
         </div>
     </div>
   </div>
@@ -23,18 +23,15 @@
     <div class="row">
         <div class="well">
           <div class="container">
-                <ul>
-                    <li ng-repeat='msg in messages'>
-                        <h3><b>Name:</b> {{msg.from}}</h3>
-                    </li>
-                </ul>
-                <hr>
-                <ul>
-                    <li ng-repeat='msg in messages'>
+            <div class="row row-centered">
+                <div class="col-lg-6 col-centered">
+                    <div ng-repeat='msg in messages'>
+                        <h3 class="form"><b>Name:</b> {{msg.from}}</h3>
                         <p><b>Feedback:</b> {{msg.body}}</p>
-                    </li>
-                </ul>
-            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
         </div>
     </div>
 </div>
