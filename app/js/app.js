@@ -37,13 +37,11 @@ routerApp.config(function($stateProvider, $urlRouterProvider) {
         controller: 'homeController'
     })
 
-    .state('home.firebase', {
-        url: '/firebase',
-        templateUrl: 'partials/firebase.html',
+    .state('home.FireBaseBaaS', {
+        url: '/FireBaseBaaS',
+        templateUrl: 'partials/FireBase.html',
         controller: 'homeController'
     })
-
-
 
     .state('comments', {
         url: '/comments',

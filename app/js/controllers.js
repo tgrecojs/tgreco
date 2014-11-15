@@ -46,10 +46,10 @@ routerApp.controller("homeController", function($rootScope, $scope, $state) {
         },
 
         {
-            heading: "FireBase",
-            route: "home.firebase",
+            heading: "The FireBase BaaS",
+            route: "home.FireBaseBaaS",
             active: false
-        }
+        },
     ];
 
 
